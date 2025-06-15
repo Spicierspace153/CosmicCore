@@ -1,7 +1,4 @@
 repositories {
-    flatDir {
-        dir("libs")
-    }
     mavenLocal()
     mavenCentral()
     maven {
@@ -35,18 +32,11 @@ repositories {
         name = 'FirstDarkDev'
         url = 'https://maven.firstdarkdev.xyz/snapshots/'
     }
-    maven { // saps.dev Maven (KubeJS and Rhino)
+    maven {
         url "https://maven.latvian.dev/releases"
         content {
             includeGroup "dev.latvian.mods"
             includeGroup "dev.latvian.apps"
-        }
-    }
-
-    maven { // saps.dev Maven (KubeJS and Rhino)
-        url 'https://jitpack.io'
-        content {
-            includeGroup "com.github.rtyley"
         }
     }
     maven { // Registrate
